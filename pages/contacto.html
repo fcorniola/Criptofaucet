@@ -28,10 +28,10 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./empezar.html">Empezar</a>
+                            <a class="nav-link" href="./criptos.html">Criptos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./tareas.html">Tareas</a>
+                            <a class="nav-link" href="./faucet.html">Faucet</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./tutoriales.html">Tutoriales</a>
@@ -48,35 +48,45 @@
 <!--Fin header-->
 <!--Inicio contenido-->
 <main>
-    <h2 class="text-center mt-2 mb-2">Formulario de contacto</h2>
-    <section class="contacto">
-        <form action="varlidar.php" method="get" enctype="multipart/form-data"> <!--Inicio formulario-->
-            <div>
-                <label for="nya"> Nombre y Apellido </label>
-                <input id ="nya" name="nya" type="text" placeholder="Ingrese Nombre y Apellido" minlength="8" maxlength="50" required>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <div class="contacto">
+                <h2 class="text-center mt-2 mb-2">Formulario de contacto</h2>
+                <form action="varlidar.php" method="get" enctype="multipart/form-data">
+                    <div>
+                        <label for="nya"> Nombre y Apellido </label>
+                        <input id ="nya" name="nya" type="text" placeholder="Ingrese Nombre y Apellido" minlength="8" maxlength="50" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mail"> Correo Electrónico </label>
+                        <input id ="mail" name="mail" type="text" placeholder="Ingrese el mail" minlength="6" maxlength="40" required>
+                    </div>
+                    <br>
+                    <div>
+                        <textarea name="mensaje" id="msj" placeholder="Escriba su mensaje" rows="8" required></textarea>
+                    </div>
+                    <div>
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
             </div>
-            <br>
-            <div>
-                <label for="mail"> Correo Electrónico </label>
-                <input id ="mail" name="mail" type="text" placeholder="Ingrese el mail" minlength="6" maxlength="40" required>
-            </div>
-            <br>
-            <div>
-                <textarea name="mensaje" id="msj" placeholder="Escriba su mensaje" rows="8" required></textarea>
-            </div>
-            <div>
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar">
-            </div>
-        </form> <!--Fin formulario-->
-    </section>
+        </div>
+        <div class="col-lg-6 col-sm-12 text-center">
+            <h2>Dónde nos encontramos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26702.93903407164!2d-66.22603062963869!3d-33.21757289618506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d41516418b0999%3A0x684f5977f95cd69e!2sAltos%20del%20lago!5e0!3m2!1ses!2sar!4v1661716730981!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 </main>
 <!--Fin contenido-->
 <!--Inicio contenido-->
-<footer class="mt-2">
-    <div class="container mt-2">
-        <p class="pulso">Todos los derechos reservados - Cripto Faucet 2022</p>
+<footer class="mt-3">
+    <div class="container d-inline-flex justify-content-around">
         <div>
+            <p class="pulso mb-auto">Todos los derechos reservados - Cripto Faucet 2022</p>
+        </div>
+        <div class="mt-2">
             <a href="https://es-la.facebook.com/" target="_blank">
                 <iconify-icon icon="entypo-social:facebook-with-circle" class="icono rota" style="color: blue;"></iconify-icon>
             </a>

@@ -1,0 +1,17 @@
+header {
+    border-bottom: solid 2px aquamarine;
+    border-top: solid 2px aquamarine;
+    h1 {
+        @include texto ($size: 3rem);
+        margin-left: 50px;
+        letter-spacing: 10px;
+    }
+    .menu li :hover {
+        @include texto ($color: black, $size: 1.7rem);
+        background-color: aquamarine;
+        border-radius: 15px;
+    }
+    .menu a{
+        @include texto ($size: 1.5rem);
+    }
+}

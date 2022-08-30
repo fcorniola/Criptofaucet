@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.fondo {
+    background-image: url(../img/fondoweb.webp);
+}
+h2{
+    @include texto ($size: 2.3rem);
+}
