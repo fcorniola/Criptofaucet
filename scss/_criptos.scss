@@ -1,18 +1,28 @@
-.col{
-    margin-top: 10px;
+.card{
+    margin-top: 1vh;
+    &:hover{
+        opacity: 0.7;
+    }
+    .card-body{
+        border: black solid 5px;
+        border-radius: 5px;
+    }
     h3{
-        @include texto ($color: black, $size: 2rem);
+        @include texto ($color: black, $size: 2rem, $peso: bolder);
     }    
     p{
-        @include texto ($color: black, $size: 1.2rem);
+        @include texto ($color: rgb(0, 0, 0), $size: 1.2rem);
     }
     iconify-icon{
         @include texto ($color: black, $size: 2rem);
-        margin-top: 5px;
+        margin-top: 3px;
         margin-bottom: 5px;
     }
     a{
         @include texto ($color: black, $size: 1.2rem);
+        &:hover{        
+            border: black solid 3px;
+        }
     }
 }
 
